@@ -1,22 +1,25 @@
 *{
 	padding: 0;
 	margin:  0;
-	width: 100%;
+	/*width: 100%;*/
 	height: 100%;
-	    font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 header{
 display: block;
 }
 #coverPhoto{
 	background-image: url("frontpage.jpg");
+	background-color: red;
 	background-size: cover;
+
 	width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1;
 }
 #fixedPhoto{
+	background-color: black;
 	top: 8%;
 	width: 40%;
 	height: 100%;
@@ -24,7 +27,37 @@ display: block;
 	background-size: cover;
 	position: fixed;
 	z-index: -1;
+	opacity: 0.9;
 }	
+
+#fixedPhoto .fixedPhotoDiv1{
+   top: 10%; 
+   left:10%;
+   width:1.5%;
+  height:70%;
+  background-color:white;
+  position:relative;
+  opacity: 0.6;
+}
+
+#fixedPhoto h1{
+  position: absolute;
+  left: 18%;
+  font-size: 60px;
+  top:65%;
+  color: white;
+}
+
+#fixedPhoto .fixedPhotoDiv2{
+   top: 10%;
+   left:10%;
+   width:70%;
+   height:1%;
+   background-color:white;
+   position:relative;
+   opacity: 0.6;
+}
+
 #text{
 	position: absolute;
 	z-index: 1;
@@ -32,13 +65,25 @@ display: block;
 	top: 200px;
 }
 
-#text h1{
-	color: red;
-	font-size: 40px;
+#coverPhoto h1{
+	height: 0%;
+	color: white;
+	font-size: 60px;
+	transform: scale(0.85,1.15);
+	font-family: 'bebas_neuebold';
+	padding-left: 45%;
+	padding-top: 20%;
+	font-weight: 1500;
+
 }
-#text h3{
-     color: red;
-	font-size: 30px;	
+#coverPhoto h3{
+     color: white;
+	font-size: 30px;
+	padding-left: 45%;
+	padding-top: 10%;	
+	transform: scale(0.85,1.15);
+	
+	font-weight: 800;
 }
 #headerLeft{
 	width: 40%;
@@ -89,27 +134,15 @@ main{
     align-items: center;
 
 }
-/*#textOnPhoto h1{
-    padding-left:43%;
-    padding-top: 25%; 
-    float: left;
-    color: #fff;
-    position: relative;
-    font-size: 56px;
-    text-align: left;
-    font-family: 'bebas_neuebold';
-}
-#textOnPhoto h3{
-    color: yellow;
-}
-*/#middle{
+#middle{
 	width: inherit;
 	margin-left: 8px; 
 	width: 500px;
 	height: 45px;
 	background-color: #292929;
 	display: inline-flex;
-    text-align:center;
+    text-align:center;	
+    justify-content: space-between;
 }
 
 #middle  nav{
